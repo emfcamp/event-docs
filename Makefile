@@ -1,6 +1,6 @@
 all: event-management-plan.pdf health-and-safety-policy.pdf
 
-event-management-plan.pdf: plan.tex event-management-plan.tex header.tex
+event-management-plan.pdf: plan.tex event-management-plan.tex header.tex first-aid-policy.tex lost-child-policy.tex
 	pdflatex -batch event-management-plan.tex
 	pdflatex -batch event-management-plan.tex
 
