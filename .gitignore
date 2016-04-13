@@ -2,3 +2,4 @@
 *.out
 *.log
 *.toc
+.DS_Store
