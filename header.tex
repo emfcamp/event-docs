@@ -1,4 +1,5 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, hidelinks]{article}
+
 \usepackage[T1]{fontenc}
 \usepackage[scaled]{helvet}
 \usepackage{amsmath}
@@ -9,16 +10,19 @@
 \usepackage{xhfill}
 \usepackage{tabu}
 \usepackage{pdfpages}
+\usepackage[labelfont=bf]{caption} 
 \usepackage[margin=2.5cm]{geometry}
-
+\usepackage[nottoc]{tocbibind}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+\usepackage[compact]{titlesec}
+\usepackage{cleveref}
 
 \renewcommand*\familydefault{\sfdefault}
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
 
-\usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc}
-\usepackage[breaklinks=true,unicode=true]{hyperref}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setcounter{secnumdepth}{2}
@@ -26,6 +30,9 @@
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%% Pad tables out a bit
+\renewcommand{\arraystretch}{1.25}
 
 \pagestyle{fancy}
 \rhead{}
