@@ -2,7 +2,7 @@
 
 all: event-management-plan.pdf
 
-event-management-plan.pdf: event-management-plan.tex first-aid-policy.tex lost-child-policy.tex buildup-risk-assessment.tex plan.tex
+event-management-plan.pdf: event-management-plan.tex first-aid-policy.tex lost-child-policy.tex buildup-risk-assessment.tex plan.tex ../header.tex
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 
 clean: 
